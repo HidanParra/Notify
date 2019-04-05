@@ -10,19 +10,22 @@
     <link rel="stylesheet" href="cdns/css/bootstrap.min.css">
     <title>Notify</title>
 </head>
-<body>
+<body  id="fondo">
+    <!--LINEA VERDE-->
     <section class="linea container-fluid">
         <div class="row">
             <div class="col"></div>
         </div>
     </section>
+    <!--INTRO-->
     <header class="main_container container"> 
         <!--<div class="linea row">
             <div class="col"></div>
         </div>-->
         <div class="row">
             <div class="logo col-sm-1">
-                <img src="img/notify.png" alt="">
+                <a href="#">
+                <img src="img/notify.png" alt=""></a>
             </div>
         </div>
         <div class="desc row">
@@ -42,6 +45,7 @@
             </div>
         </div>    
     </header>
+    <!--CARACTERISTICAS-->
     <section class="carac container-fluid">
         <div class="lista row">
             <div class="col-sm-4" group>
@@ -61,12 +65,13 @@
             </div>
         </div>
     </section>
+    <!--SECCION DE VIDEO-->
     <section class="vid container-fluid">
-        <div class="multi row">
+        <div class="multi row justify-content-center">
             <div class="col-sm-6" group>
                 <h3>Get Notified Of Any Updates!</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <div class="input-group mb-3">
+                <div class="dato input-group mb-3">
                     <input type="text" class="form-control" placeholder="Email Address" aria-label="Email-address" aria-describedby="basic-addon2">
                     <div class="input-group-append">
                         <button type="button" class="btn btn-success">Notify</button>
@@ -80,19 +85,39 @@
             </div>
         </div>
     </section>
+    <!--COMENTARIOS-->
     <section class="users container fluid">
-        <div class="coment row">
-            <div class="col-sm-8">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac auctor quam, ut convallis libero. Aenean quam arcu, pellentesque at dignissim et, pulvinar non libero. Pellentesque et tortor vehicula, auctor nunc ac, varius ligula. In arcu erat, pharetra ac dui sit amet, rhoncus tempor massa. Nullam nibh erat, fermentum vel blandit vel, consectetur ac odio. Praesent nec ipsum venenatis magna viverra auctor ut non turpis.</p>
-                <h4>Name User</h4>                
-            </div>
+        <div class="row justify-content-center">
+            <div class="coment col-sm-6" >
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac auctor quam, ut convallis libero. Aenean quam arcu, pellentesque at dignissim et, pulvinar non libero. Pellentesque et tortor vehicula, auctor nunc ac, varius ligula. In arcu erat, pharetra ac dui sit amet, rhoncus tempor massa. Nullam nibh erat, fermentum vel blandit vel, consectetur ac odio. Praesent nec ipsum venenatis magna viverra auctor ut non turpis.</p>               
+                <h4>Name User</h4> 
+            </div>  
         </div>
-        <div class="slider row">
-            <div class="people col-sm-12"></div>
             <!--Slider de Photos de Gente--> 
-            <img src="img/anon.png" width="50px" height="50px" alt="">
-        </div>
-        <div class="row">
+            <div id="carouselExampleIndicators" class="carousel slide col-sm-8 mx-auto" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" style="background-image:url('img/p1.jpg')"></div>
+                      <div class="carousel-item" style="background-image:url('img/p1.jpg')"></div>
+                      <div class="carousel-item" style="background-image:url('img/p1.jpg')"></div>
+                      <div class="carousel-item" style="background-image:url('img/p1.jpg')"></div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+        
+        <div class="saludos row justify-content-center">
             <div class="col-sm-6">
                 <h3>Say Hi & Get in Touch</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac auctor quam, ut convallis libero.</p>
@@ -113,9 +138,10 @@
             </div>
         </div>    
     </section>
+    <!--FOOTER-->
     <footer class="container-fluid">
         <div class="row">
-            <div class="col-sm-12" offset-col-12>
+            <div class="col-sm-8 mx-auto" offset-col-12>
                 <nav>
                     <ul class="nav">
                         <li class="nav-text"><a href="#"><p>CONTACT</p></a></li>
